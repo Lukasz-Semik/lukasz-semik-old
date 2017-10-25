@@ -1,0 +1,127 @@
+.drops-container{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.drop{
+  position: absolute;
+  opacity: 0;
+  bottom: 2%;
+  left: 10%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 50%;
+  background-color: rgba($light-green, 0.3);
+  transition: all 0.6s ease-in-out;
+  animation: dropAnimation 20s linear infinite;
+  &:hover{
+    cursor: pointer;
+  }
+  &__efx{
+    background-color: rgba(255,255,255,0.3);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    transition: all 0.6 ease-in-out;
+  }
+  /*crashed*/
+  &--crashed{
+    transform: scale(3);
+    border: 2px dotted transparent;
+    background-color: transparent;
+    .drop__efx{
+      background-color: transparent;
+    }
+    &:hover{
+      cursor: auto;
+    }
+  }
+  /*main animation*/
+  &--ani-1{
+    animation-delay: 0s
+  }
+  &--ani-2{
+    animation-delay: 2s
+  }
+  &--ani-3{
+    animation-delay: 4s
+  }
+  &--ani-4{
+    animation-delay: 6s
+  }
+  &--ani-5{
+    animation-delay: 8s
+  }
+  &--ani-6{
+    animation-delay: 10s
+  }
+  &--ani-7{
+    animation-delay: 12s
+  }
+  &--ani-8{
+    animation-delay: 14s
+  }
+  &--ani-9{
+    animation-delay:  16s
+  }
+  &--ani-10{
+    animation-delay: 18s
+  }
+
+  &--pos-1{
+    left: 20%;
+  }
+  &--pos-2{
+    left: 27%;
+  }
+  &--pos-3{
+    left: 34%;
+  }
+  &--pos-4{
+    left: 41%;
+  }
+  &--pos-5{
+    left: 48%;
+  }
+  &--pos-6{
+    left: 55%;
+  }
+  &--pos-7{
+    left: 62%;
+  }
+  &--pos-8{
+    left: 69%;
+  }
+  &--pos-9{
+    left: 76%;
+  }
+  &--pos-10{
+    left: 83%;
+  }
+  /*end of main animation*/
+}
+
+@keyframes dropAnimation {
+  0%{
+    bottom: 2%;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    bottom: 90%;
+    opacity: 0;
+  }
+}

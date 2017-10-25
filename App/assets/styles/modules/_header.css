@@ -1,0 +1,40 @@
+.header-container{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0,-50%);
+  text-align: center;
+}
+.header-title{
+  font-size: 2.8rem;
+  overflow: hidden;
+  @mixin atSmall{
+    font-size: 4.3rem;
+  }
+  color: $light-green;
+  &__text{
+    padding: auto 5px;
+    margin: 60px auto;
+    letter-spacing: 2px;
+    &--contact{
+      position: relative;
+      animation: contacting 5s linear infinite;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+@keyframes contacting {
+  0%{
+    color: $light-green;
+    transform: scale(1);
+  }
+  50%{
+    color: $light-orange;
+  }
+  100%{
+    color: $light-green;
+    transform: scale(1);
+  }
+}

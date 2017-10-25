@@ -1,3 +1,3 @@
-import testFunc from './modules/test';
+import Drop from './modules/Drop';
 
-testFunc();
+const drop = new Drop();

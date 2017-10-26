@@ -12,3 +12,8 @@ body{
   /*font-family: 'Mouse Memoirs', sans-serif;*/
   font-family: 'Seymour One', sans-serif;
 }
+
+.fortests{
+  height: 1000px;
+  background: linear-gradient(to bottom, #00C9FF, #A3FEAE, #00C9FF);
+}

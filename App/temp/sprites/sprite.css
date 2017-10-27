@@ -1,0 +1,126 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-bootstrap {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 51px;
+  height: 50px;
+}
+.icon-cpp {
+  background-image: url(sprite.png);
+  background-position: -90px -150px;
+  width: 43px;
+  height: 50px;
+}
+.icon-css3 {
+  background-image: url(sprite.png);
+  background-position: 0px -50px;
+  width: 50px;
+  height: 50px;
+}
+.icon-git {
+  background-image: url(sprite.png);
+  background-position: -50px -50px;
+  width: 50px;
+  height: 50px;
+}
+.icon-gulp {
+  background-image: url(sprite.png);
+  background-position: -201px -23px;
+  width: 25px;
+  height: 50px;
+}
+.icon-html5 {
+  background-image: url(sprite.png);
+  background-position: -101px -50px;
+  width: 50px;
+  height: 50px;
+}
+.icon-jest {
+  background-image: url(sprite.png);
+  background-position: 0px -100px;
+  width: 50px;
+  height: 50px;
+}
+.icon-jquery {
+  background-image: url(sprite.png);
+  background-position: -50px -100px;
+  width: 50px;
+  height: 50px;
+}
+.icon-js {
+  background-image: url(sprite.png);
+  background-position: -100px -100px;
+  width: 50px;
+  height: 50px;
+}
+.icon-lredux {
+  background-image: url(sprite.png);
+  background-position: -151px -100px;
+  width: 50px;
+  height: 47px;
+}
+.icon-mongo {
+  background-image: url(sprite.png);
+  background-position: 0px -150px;
+  width: 46px;
+  height: 50px;
+}
+.icon-node {
+  background-image: url(sprite.png);
+  background-position: -46px -150px;
+  width: 44px;
+  height: 50px;
+}
+.icon-npm {
+  background-image: url(sprite.png);
+  background-position: -201px 0px;
+  width: 60px;
+  height: 23px;
+}
+.icon-postcss {
+  background-image: url(sprite.png);
+  background-position: -151px -50px;
+  width: 50px;
+  height: 50px;
+}
+.icon-react {
+  background-image: url(sprite.png);
+  background-position: -151px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-sass {
+  background-image: url(sprite.png);
+  background-position: -101px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-webpack {
+  background-image: url(sprite.png);
+  background-position: -133px -150px;
+  width: 43px;
+  height: 50px;
+}
+.icon-yarn {
+  background-image: url(sprite.png);
+  background-position: -51px 0px;
+  width: 50px;
+  height: 50px;
+}

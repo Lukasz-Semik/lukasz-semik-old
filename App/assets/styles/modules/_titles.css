@@ -1,0 +1,38 @@
+.title{
+  margin: 0;
+  text-align: center;
+  &--bot-margin{
+    margin-bottom: 2.5rem;
+  }
+  &--purple{
+    color: $dark-purple;
+  }
+  &--orange{
+    color: $v-light-orange;
+  }
+  &--section{
+    font-size: 2.3rem;
+    padding: 3rem 0;
+    @mixin atSmall{
+      font-size: 4rem;
+    }
+    @mixin atSmall{
+      padding: 3rem;
+    }
+  }
+  &--item{
+    font-size: 2.2rem;
+    @mixin atSmall{
+      font-size: 3rem;
+    }
+    padding: 3rem;
+    text-shadow: 0.5px 0.5px black;
+  }
+  &--skill-name{
+    font-size: 1.3rem;
+    @mixin atSmall{
+      font-size: 2rem;
+    }
+    line-height: 5rem;
+  }
+}

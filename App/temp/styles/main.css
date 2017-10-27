@@ -460,7 +460,7 @@ html{
 }
 
 body{
-  background-color: white;
+  background-color: black;
   margin: 0;
   padding: 0;
   /*font-family: 'Sigmar One', cursive;*/
@@ -468,14 +468,51 @@ body{
   font-family: 'Seymour One', sans-serif;
 }
 
-.fortests{
-  height: 1000px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00C9FF), color-stop(#A3FEAE), to(#00C9FF));
-  background: linear-gradient(to bottom, #00C9FF, #A3FEAE, #00C9FF);
-}
-
 .wrapper-relative{
   position: relative;
+}
+
+.row-flex{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-flex--md-1{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+@media (min-width: 800px){
+
+.row-flex--md-1{
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row
+  }
+  }
+
+.col-flex-6{
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.col-flex-4{
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.col-flex-8{
+  -ms-flex-preferred-size: 66.66%;
+      flex-basis: 66.66%;
+}
+
+.col-margin-bot{
+  margin-bottom: 5rem;
 }
 
 .overlay{
@@ -751,7 +788,7 @@ body{
   position: fixed;
   width: 100%;
   z-index: 10;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .nav__link{
@@ -770,5 +807,90 @@ body{
 
 .nav__menu-item{
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
+
+.my-stack-container{
+  background: -webkit-gradient(linear, left top, left bottom, from(#00C9FF), color-stop(#A3FEAE), to(#00C9FF));
+  background: linear-gradient(to bottom, #00C9FF, #A3FEAE, #00C9FF);
+  padding-bottom: 3rem;
+  border-bottom: 3px solid black;
+  overflow: hidden;
+}
+
+.my-stack-separator{
+  background-color: #400075;
+  width: 80%;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.title{
+  margin: 0;
+  text-align: center;
+}
+
+.title--bot-margin{
+    margin-bottom: 2.5rem;
+  }
+
+.title--purple{
+    color: #400075;
+  }
+
+.title--orange{
+    color: #f8cc7f;
+  }
+
+.title--section{
+    font-size: 2.3rem;
+    padding: 3rem 0;
+  }
+
+@media (min-width: 520px) {
+
+.title--section{
+      font-size: 4rem
+  }
+  }
+
+@media (min-width: 520px) {
+
+.title--section{
+      padding: 3rem
+  }
+  }
+
+.title--item{
+    font-size: 2.2rem;
+    padding: 3rem;
+    text-shadow: 0.5px 0.5px black;
+  }
+
+@media (min-width: 520px) {
+
+.title--item{
+      font-size: 3rem;
+  }
+  }
+
+.title--skill-name{
+    font-size: 1.3rem;
+    line-height: 5rem;
+  }
+
+@media (min-width: 520px) {
+
+.title--skill-name{
+      font-size: 2rem;
+  }
+  }
+
+.icon-center{
+  margin: 0 auto;
+}
+
+.icon-move-down{
+  margin-top: 15px;
+}

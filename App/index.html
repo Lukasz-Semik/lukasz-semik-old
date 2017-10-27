@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs|Seymour+One|Sigmar+One&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="temp/sprites/sprite.css">
   <link rel="stylesheet" type="text/css" href="temp/styles/main.css">
   <title>Łukasz Semik - Web Development</title>
 </head>
 <body>
-  <nav class="nav">
+  <!-- <nav class="nav">
     <a href="#" class="nav__link">{ŁS}</a>
     <ul class="nav__menu-container">
       <li class="nav__menu-item"><a href="#" class="nav__link">IT SKILLS</a></li>
@@ -17,7 +18,7 @@
       <li class="nav__menu-item"><a href="#" class="nav__link">ABOUT ME</a></li>
       <li class="nav__menu-item"><a href="#" class="nav__link nav__link--contact">CONTACT</a></li>
     </ul>
-  </nav>
+  </nav> -->
   <div class="wrapper-relative">
     <img class="hero-img" src="assets/img/hero-v3.jpg" alt="probably deep water">
     <div class="overlay"></div>
@@ -30,7 +31,161 @@
     </header>
     <div class="drops-container"></div>
   </div>
-  <div class="fortests"></div>
+  <!-- IT SKILLS SECTION -->
+  <section class="my-stack-container">
+    <h1 class="title title--purple title--section">MY STACK</h1>
+    <div class="my-stack-separator"></div>
+    <!-- FIRST MAIN ROW -->
+    <div class="row-flex row-flex--md-1">
+
+      <div class="col-flex-6">
+        <h3 class="title title--orange title--item">Advanced</h3>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-flex-4--md-2 col-margin-bot">
+            <div class="icon-center icon-js"></div>
+          </div>
+          <div class="col-flex-8 col-flex-8--md-8"><h4 class="title title--skill-name">JavaScript(ES6)</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-html5"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">HTML 5</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-css3"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">CSS 3</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-react"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">ReactJS</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-lredux"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Redux</h4></div>
+        </div>
+      </div>
+
+      <div class="col-flex-6">
+        <h3 class="title title--orange title--item">Intermediate</h3>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-jquery"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">jQuery</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-postcss"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">POSTCSS</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-sass"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Sass</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-bootstrap"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Bootstrap</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-cpp"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">C++</h4></div>
+        </div>
+      </div>
+    </div>
+    <h3 class="title title--orange title--item title--bot-margin">Others &amp; Tools</h3>
+    <!-- SECOND MAIN ROW -->
+    <div class="row-flex row-flex--md-1">
+
+      <div class="col-flex-6">
+        <!-- <h3 class="title title--orange title--item">Advanced</h3> -->
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-node"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">NodeJS </h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-mongo"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">MongoDB </h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-jest"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Jest </h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-yarn"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Yarn</h4></div>
+        </div>
+      </div>
+
+      <div class="col-flex-6">
+        <!-- <h3 class="title title--orange title--item">Intermediate</h3> -->
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-git"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Git</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-webpack"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Webpack</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-gulp"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">Gulp</h4></div>
+        </div>
+        <!-- SINGLE ITEM -->
+        <div class="row-flex">
+          <div class="col-flex-4 col-margin-bot">
+            <div class="icon-center icon-move-down icon-npm"></div>
+          </div>
+          <div class="col-flex-8"><h4 class="title title--skill-name">NPM</h4></div>
+        </div>
+      </div>
+    </div><!-- END OF SECOND MAIN ROW - MY STACK -->
+  </section>
+
   <script src="temp/scripts/App.js"></script>
 </body>
 </html>

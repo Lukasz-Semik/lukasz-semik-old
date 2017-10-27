@@ -5,15 +5,10 @@ html{
   font-size: 62.5%;
 }
 body{
-  background-color: white;
+  background-color: black;
   margin: 0;
   padding: 0;
   /*font-family: 'Sigmar One', cursive;*/
   /*font-family: 'Mouse Memoirs', sans-serif;*/
   font-family: 'Seymour One', sans-serif;
-}
-
-.fortests{
-  height: 1000px;
-  background: linear-gradient(to bottom, #00C9FF, #A3FEAE, #00C9FF);
 }

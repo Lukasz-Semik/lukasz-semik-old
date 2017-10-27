@@ -1,0 +1,24 @@
+.row-flex{
+  width: 100%;
+  display: flex;
+
+  &--md-1{
+    flex-direction: column;
+    @mixin atMedium{
+      flex-direction: row;
+    }
+  }
+}
+
+.col-flex-6{
+  flex-basis: 50%;
+}
+.col-flex-4{
+  flex-basis: 33.33%;
+}
+.col-flex-8{
+  flex-basis: 66.66%;
+}
+.col-margin-bot{
+  margin-bottom: 5rem;
+}

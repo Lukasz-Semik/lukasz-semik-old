@@ -1,0 +1,13 @@
+.my-stack-container{
+  background: linear-gradient(to bottom, #00C9FF, #A3FEAE, #00C9FF);
+  padding-bottom: 3rem;
+  border-bottom: 3px solid black;
+  overflow: hidden;
+}
+.my-stack-separator{
+  background-color: $dark-purple;
+  width: 80%;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 50%;
+}

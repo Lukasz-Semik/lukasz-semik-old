@@ -2,14 +2,21 @@
   width: 100%;
   display: flex;
 
-  &--md-1{
+  &--content-md-1{
     flex-direction: column;
     @mixin atMedium{
       flex-direction: row;
     }
   }
 }
-
+.col-flex-content-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-flex-content-vertical{
+  flex-direction: column; 
+}
 .col-flex-6{
   flex-basis: 50%;
 }

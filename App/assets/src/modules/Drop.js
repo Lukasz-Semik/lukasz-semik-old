@@ -25,15 +25,15 @@ class Drop{
       }
     }
     for(let i=0; i<10; i++){
-      const dropTxt = `<div class="drop drop--pos-${randomPosition[i]} drop--ani-${randomDelaysArr[i]}"><div class="drop__efx"></div></div>`;
+      const dropTxt = `<div class="drop drop--pos-${randomPosition[i]} drop--ani-${randomDelaysArr[i]}"><span class="drop__efx"></span></div>`;
       header.append(dropTxt);
     }
   }
   generateEvents(){
-    this.drops.click(this.dropsClickAnimation.bind(this));
+    this.drops.on("click", this.dropsClickAnimation.bind(this));
   }
   dropsClickAnimation(event){
-    const drop = $(event.target);
+    const drop = $(event.currentTarget);
     drop.addClass('drop--crashed');
     setTimeout(()=>{
       drop.removeClass('drop--crashed');

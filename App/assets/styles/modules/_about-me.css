@@ -1,0 +1,149 @@
+.about-me-container{
+  width: 100%;
+  background: url('/assets/img/about-me2.jpg');
+  position: relative;
+  border-bottom: 3px solid black;
+}
+.about-me{
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  @mixin atSmall{
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0 3rem 0 3rem;
+  }
+  &__gear-animation{
+    animation: gearRotation 6s linear infinite;
+  }
+  &__monitor-text{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    line-height: 2rem;
+  }
+  &__slogans{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    margin: 0;
+    color: $v-light-orange;
+    @mixin atMedium{
+      font-size: 3rem;
+    }
+    &--moving-first-one{
+      animation: moving-first-item 56s linear;
+    }
+    &--moving{
+      animation: moving 60s linear infinite;
+      &--1{
+        animation-delay: 5.6s;
+      }
+      &--2{
+        animation-delay: 11.6s;
+      }
+      &--3{
+        animation-delay: 17.6s;
+      }
+      &--4{
+        animation-delay: 23.6s;
+      }
+      &--5{
+        animation-delay: 29.6s;
+      }
+      &--6{
+        animation-delay: 35.6s;
+      }
+      &--7{
+        animation-delay: 41.6s;
+      }
+      &--8{
+        animation-delay: 47.6s;
+      }
+      &--9{
+        animation-delay: 53.6s;
+      }
+      &--10{
+        animation-delay: 59.6s;
+      }
+    }
+  }
+}
+strong{
+  color: $light-orange;
+  text-shadow: 1px 1px black;
+}
+
+@keyframes moving-first-item {
+  0%{
+    top: 50%;
+    opacity: 1;
+  }
+  9.7%{
+    top: 50%;
+    opacity: 1;
+  }
+  10.4%{
+    top: 100%;
+    opacity: 0;
+  }
+  12%{
+    top: 0;
+    opacity: 0;
+  }
+  100%{
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes moving {
+  0%{
+    top: 0;
+    opacity: 0;
+  }
+  0.7%{
+    top: 50%;
+    opacity: 1;
+  }
+  9.7%{
+    top: 50%;
+    opacity: 1;
+  }
+  10.4%{
+    top: 100%;
+    opacity: 0;
+  }
+  13.15%{
+    top: 100%;
+    opacity: 0;
+  }
+  100%{
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes gearRotation {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  10%{
+    transform: rotateZ(0deg);
+  }
+  80%{
+    transform: rotateZ(90deg);
+  }
+  90%{
+    transform: rotateZ(45deg);
+    animation-timing-function: ease-in-out;
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}

@@ -60,103 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Drop = __webpack_require__(1);
-
-var _Drop2 = _interopRequireDefault(_Drop);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var drop = new _Drop2.default();
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Drop = function () {
-  function Drop() {
-    _classCallCheck(this, Drop);
-
-    this.createDrops();
-    this.drops = (0, _jquery2.default)('.drop');
-    this.generateEvents();
-  }
-
-  _createClass(Drop, [{
-    key: 'createDrops',
-    value: function createDrops() {
-      var randomDelaysArr = [];
-      while (randomDelaysArr.length < 10) {
-        var randNum = Math.floor(Math.random() * 10 + 1);
-        if (randomDelaysArr.indexOf(randNum) === -1) {
-          randomDelaysArr.push(randNum);
-        }
-      }
-      var header = (0, _jquery2.default)('.drops-container');
-      header.html('');
-      var randomPosition = [];
-      while (randomPosition.length < 10) {
-        var _randNum = Math.floor(Math.random() * 10 + 1);
-        if (randomPosition.indexOf(_randNum) === -1) {
-          randomPosition.push(_randNum);
-        }
-      }
-      for (var i = 0; i < 10; i++) {
-        var dropTxt = '<div class="drop drop--pos-' + randomPosition[i] + ' drop--ani-' + randomDelaysArr[i] + '"><div class="drop__efx"></div></div>';
-        header.append(dropTxt);
-      }
-    }
-  }, {
-    key: 'generateEvents',
-    value: function generateEvents() {
-      this.drops.click(this.dropsClickAnimation.bind(this));
-    }
-  }, {
-    key: 'dropsClickAnimation',
-    value: function dropsClickAnimation(event) {
-      var drop = (0, _jquery2.default)(event.target);
-      drop.addClass('drop--crashed');
-      setTimeout(function () {
-        drop.removeClass('drop--crashed');
-      }, 3000);
-    }
-  }]);
-
-  return Drop;
-}();
-
-;
-
-exports.default = Drop;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10414,6 +10322,156 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Drop = __webpack_require__(2);
+
+var _Drop2 = _interopRequireDefault(_Drop);
+
+var _MonitorText = __webpack_require__(3);
+
+var _MonitorText2 = _interopRequireDefault(_MonitorText);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var drop = new _Drop2.default();
+var monitorText = new _MonitorText2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Drop = function () {
+  function Drop() {
+    _classCallCheck(this, Drop);
+
+    this.createDrops();
+    this.drops = (0, _jquery2.default)('.drop');
+    this.generateEvents();
+  }
+
+  _createClass(Drop, [{
+    key: 'createDrops',
+    value: function createDrops() {
+      var randomDelaysArr = [];
+      while (randomDelaysArr.length < 10) {
+        var randNum = Math.floor(Math.random() * 10 + 1);
+        if (randomDelaysArr.indexOf(randNum) === -1) {
+          randomDelaysArr.push(randNum);
+        }
+      }
+      var header = (0, _jquery2.default)('.drops-container');
+      header.html('');
+      var randomPosition = [];
+      while (randomPosition.length < 10) {
+        var _randNum = Math.floor(Math.random() * 10 + 1);
+        if (randomPosition.indexOf(_randNum) === -1) {
+          randomPosition.push(_randNum);
+        }
+      }
+      for (var i = 0; i < 10; i++) {
+        var dropTxt = '<div class="drop drop--pos-' + randomPosition[i] + ' drop--ani-' + randomDelaysArr[i] + '"><span class="drop__efx"></span></div>';
+        header.append(dropTxt);
+      }
+    }
+  }, {
+    key: 'generateEvents',
+    value: function generateEvents() {
+      this.drops.on("click", this.dropsClickAnimation.bind(this));
+    }
+  }, {
+    key: 'dropsClickAnimation',
+    value: function dropsClickAnimation(event) {
+      var drop = (0, _jquery2.default)(event.currentTarget);
+      drop.addClass('drop--crashed');
+      setTimeout(function () {
+        drop.removeClass('drop--crashed');
+      }, 3000);
+    }
+  }]);
+
+  return Drop;
+}();
+
+;
+
+exports.default = Drop;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MonitorText = function () {
+  function MonitorText() {
+    _classCallCheck(this, MonitorText);
+
+    this.mainText = ['c', 'o', 'n', 's', 't ', 'l', 'u', 'k', 'a', 's', 'z ', '= ', '{<br/>&nbsp;&nbsp;&nbsp;&nbsp;', 's', 'k', 'i', 'l', 'l', ': ', '\'', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't', '\'', ',<br/>&nbsp;&nbsp;&nbsp;&nbsp;', 'g', 'o', 'o', 'd', 'C', 'h', 'o', 'i', 'c', 'e', ': ', 't', 'r', 'u', 'e<br/>', '}', ';', '', '', '', '', '', '', '', '', '', '', ''];
+    console.log(this.mainText);
+    this.tempText = '';
+    this.counter = -1;
+    this.areaToInject = (0, _jquery2.default)('.about-me__monitor-text');
+    this.injecting = this.injecting.bind(this);
+    setInterval(this.injecting, 100);
+  }
+
+  _createClass(MonitorText, [{
+    key: 'injecting',
+    value: function injecting() {
+      this.counter++;
+      if (this.counter >= this.mainText.length) {
+        this.areaToInject.html('');
+        this.tempText = '';
+        this.counter = 0;
+      }
+      this.tempText += this.mainText[this.counter];
+      this.areaToInject.html(this.tempText);
+    }
+  }]);
+
+  return MonitorText;
+}();
+
+exports.default = MonitorText;
 
 /***/ })
 /******/ ]);

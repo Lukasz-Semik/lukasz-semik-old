@@ -892,8 +892,37 @@ body{
   }
   }
 
-.title--resize-at-sm{
+.title--exp{
+    font-size: 1.6rem;
+    margin-bottom:2rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 3rem;
+  }
 
+@media (min-width: 520px) {
+
+.title--exp{
+      padding-left: 10rem;
+      font-size: 2rem
+  }
+  }
+
+.title--descr{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #222;
+    padding-right: 2.5rem;
+    text-align: center;
+  }
+
+@media (min-width: 520px) {
+
+.title--descr{
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      text-align: left
+  }
   }
 
 .title--bot-margin{
@@ -950,7 +979,7 @@ body{
 
 .title--github-link{
     font-size: 1.5rem;
-    padding: 3rem 1rem 1rem 1rem; 
+    padding: 3rem 1rem 1rem 1rem;
     text-shadow: 1.5px 1.5px black;
   }
 
@@ -963,14 +992,14 @@ body{
   }
 
 .title--skill-name{
-    font-size: 1.3rem;
     line-height: 5rem;
+    font-size: 1.3rem;
   }
 
 @media (min-width: 520px) {
 
 .title--skill-name{
-      font-size: 2rem;
+      font-size: 2rem
   }
   }
 

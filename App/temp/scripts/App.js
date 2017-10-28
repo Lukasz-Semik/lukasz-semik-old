@@ -10446,7 +10446,6 @@ var MonitorText = function () {
     _classCallCheck(this, MonitorText);
 
     this.mainText = ['c', 'o', 'n', 's', 't ', 'l', 'u', 'k', 'a', 's', 'z ', '= ', '{<br/>&nbsp;&nbsp;&nbsp;&nbsp;', 's', 'k', 'i', 'l', 'l', ': ', '\'', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't', '\'', ',<br/>&nbsp;&nbsp;&nbsp;&nbsp;', 'g', 'o', 'o', 'd', 'C', 'h', 'o', 'i', 'c', 'e', ': ', 't', 'r', 'u', 'e<br/>', '}', ';', '', '', '', '', '', '', '', '', '', '', ''];
-    console.log(this.mainText);
     this.tempText = '';
     this.counter = -1;
     this.areaToInject = (0, _jquery2.default)('.about-me__monitor-text');

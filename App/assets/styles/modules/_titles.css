@@ -7,8 +7,28 @@
       text-align: center;
     }
   }
-  &--resize-at-sm{
-
+  &--exp{
+    font-size: 1.6rem;
+    margin-bottom:2rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 3rem;
+    @mixin atSmall{
+      padding-left: 10rem;
+      font-size: 2rem;
+    }
+  }
+  &--descr{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #222;
+    padding-right: 2.5rem;
+    text-align: center;
+    @mixin atSmall{
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      text-align: left;
+    }
   }
   &--bot-margin{
     margin-bottom: 2.5rem;
@@ -45,7 +65,7 @@
   }
   &--github-link{
     font-size: 1.5rem;
-    padding: 3rem 1rem 1rem 1rem; 
+    padding: 3rem 1rem 1rem 1rem;
     text-shadow: 1.5px 1.5px black;
     @mixin atSmall{
       font-size: 3rem;
@@ -53,11 +73,11 @@
     }
   }
   &--skill-name{
+    line-height: 5rem;
     font-size: 1.3rem;
     @mixin atSmall{
       font-size: 2rem;
     }
-    line-height: 5rem;
   }
   &--link-rework{
     display: block;

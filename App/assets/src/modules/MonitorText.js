@@ -8,7 +8,6 @@ class MonitorText{
       ',<br/>&nbsp;&nbsp;&nbsp;&nbsp;','g','o','o','d','C','h','o','i','c','e',
       ': ','t','r','u','e<br/>','}',';','','','','','','','','','','',''
     ];
-    console.log(this.mainText);
     this.tempText = '';
     this.counter = -1;
     this.areaToInject = $('.about-me__monitor-text');

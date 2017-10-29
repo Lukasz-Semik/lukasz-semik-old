@@ -10,3 +10,6 @@ body{
   padding: 0;
   font-family: 'Seymour One', sans-serif;
 }
+a{
+  text-decoration: none;
+}

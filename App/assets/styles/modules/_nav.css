@@ -11,7 +11,7 @@
     padding: 1rem;
   }
   &--more-visible{
-      background-color: rgba($main-blue, 0.7);
+      background-color: rgba($main-blue, 0.9);
   }
   &__link{
     color: $light-green;
@@ -24,6 +24,13 @@
     }
     &--current{
       color: $light-orange;
+    }
+    &--ls{
+      display: block;
+      float: left;
+      @mixin atSmall{
+        padding: 1rem;
+      }
     }
   }
   &__menu-container{
@@ -46,7 +53,7 @@
       transform: translateX(-50%) scale(1);
       z-index: 15;
       color: $dark-green;
-      background-color: rgba($main-blue, 0.7);
+      background-color: rgba($main-blue, 0.9);
     }
     @mixin atMedium{
       position: static;

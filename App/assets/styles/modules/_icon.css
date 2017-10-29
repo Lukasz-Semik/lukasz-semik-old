@@ -1,5 +1,6 @@
 .icon-center{
   margin: 0 auto;
+  display: block;
 }
 .icon-move-down{
   margin-top: 15px;

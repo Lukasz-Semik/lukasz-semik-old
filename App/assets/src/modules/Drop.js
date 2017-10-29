@@ -6,7 +6,7 @@ class Drop{
     this.drops = $('.drop');
     this.generateEvents();
   }
-  
+
   createDrops(){
     const randomDelaysArr = [];
       while(randomDelaysArr.length<10){
@@ -33,7 +33,7 @@ class Drop{
     this.drops.on("click", this.dropsClickAnimation.bind(this));
   }
   dropsClickAnimation(event){
-    //we are taking current target, to always add crashed class to drop, not the small white circle.
+    //i am taking current target, to always add crashed class to drop, not the small white circle.
     const drop = $(event.currentTarget);
     drop.addClass('drop--crashed');
     setTimeout(()=>{

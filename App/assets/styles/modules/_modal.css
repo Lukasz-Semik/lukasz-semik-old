@@ -1,0 +1,59 @@
+.modal-clicker:hover{
+  cursor: pointer;
+}
+.modal{
+  &__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.3);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    visibility: hidden;
+    &--visible{
+      /*z-index: 20;*/
+      visibility: visible;
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  &__content{
+    width: 95%;
+    height: 500px;
+    position: relative;
+    background-color: rgba($light-green, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    box-shadow: 1px 1px 1px black;
+    @mixin atSmall{
+      width: 500px;
+    }
+    p{
+      font-size: 1.6rem;
+      margin: 2rem 0;
+    }
+  }
+  &__x{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__label{
+    color: $dark-green;
+    text-shadow: 1px 1px black;
+  }
+}

@@ -12,11 +12,9 @@ class SeparatorAnimation{
     const that = this;
     this.titles.each(i=>{
       const currentTitle = that.titles[i];
-      console.log(currentTitle);
       new Waypoint({
         element: currentTitle,
         handler: direction=>{
-          console.log('test')
           if(direction === 'down'){
             $(currentTitle).addClass('my-stack-separator--visible');
           }else{

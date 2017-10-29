@@ -7,30 +7,31 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Seymour+One&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="temp/sprites/sprite.css">
   <link rel="stylesheet" type="text/css" href="temp/styles/main.css">
-  <title>Łukasz Semik - Web Development</title>
+  <title>Łukasz Semik - JavScript Developer</title>
 </head>
 <body>
   <nav class="nav">
-    <a href="#landing" class="nav__link">{ŁS}</a>
+    <a href="#landing" class="nav__link nav__link--ls">{ŁS}</a>
     <ul class="nav__menu-container">
       <li class="nav__menu-item"><a href="#my-stack-id" id="my-stack-link" class="nav__link">MY STACK</a></li>
       <li class="nav__menu-item"><a href="#about-me-id" id="about-me-link" class="nav__link">ABOUT</a></li>
       <li class="nav__menu-item"><a href="#edu-exp-id" id="edu-exp-link" class="nav__link">EXP&amp;EDU</a></li>
-      <li class="nav__menu-item"><a href="#" class="nav__link nav__link--contact">CONTACT</a></li>
+      <li class="nav__menu-item"><a href="#" class="nav__link nav__link--contact modal-clicker">CONTACT</a></li>
     </ul>
     <div id="hamburger" class="nav-icon">
       <div class="nav-icon--middle"></div>
     </div>
     <div class="nav-icon__closer">X</div>
   </nav>
+  <div class="page-wrapper">
   <section class="wrapper-relative" id="landing" data-matching-link="#landing-link">
     <img class="hero-img" src="assets/img/hero-v3.jpg" alt="probably deep water">
     <div class="overlay"></div>
     <header class="header-container">
       <div class="header-title">
         <h2 class="header-title__text"><i>Hi! I'm Łukasz</i></h2>
-        <h2 class="header-title__text"><i>Let's Code!</i></h2>
-        <h2 class="header-title__text header-title__text--contact"><i>Contact me!</i></h2>
+        <h2 class="header-title__text"><i>JS Developer</i></h2>
+        <h2 class="header-title__text header-title__text--contact"><i>Let's Code!</i></h2>
       </div>
     </header>
     <div class="drops-container"></div>
@@ -210,7 +211,7 @@
         Hi! My name is <strong>Łukasz Semik</strong> and I am fascinated in <strong>JavaScript</strong> and <strong>Web Development</strong>.
         I am mechanical engineer, who found the true passion in coding and decided to change the trade.
         If you need the <strong>junior front-end developer</strong> with strong programming skillset and aspiration to be a <strong>full-stack</strong>:
-        <span class="title title--link-rework title--green title--item">contact me!<span>
+        <span class="title title--link-rework title--green title--item modal-clicker">contact me!<span>
       </p>
     </div>
     <div class="wrapper--80 wrapper--top-bot-margin">
@@ -276,13 +277,36 @@
         <p class="titile title--exp">I finished Mechanics and Machine Building department in 2013.</p>
         <p class="title title--exp title--descr">
           During my education I was focused on CAD software skills development.
-          I am specialist with using: <bold> ProEngineer, Creo 2, Catia, AutoCAD, Ideas</bold>
-          I have huge experience in working with: PTC Windchill, SAP BPD, MS Excel, Minitab.
+          I am specialist with using: <bold> ProEngineer, Creo 2, Catia, AutoCAD, Ideas.</bold>
+          I have huge experience in working with: PTC Windchill Business Process Management, SAP BPD, MS Excel, Minitab, Global Engineering Solution.
           During my career I have finished several courses in <bold>Project Leading and Management.</bold><br/>
         </p>
       </div>
     </div>
   </section>
+  </div>
+  <!-- CONTACT MODAL -->
+  <div class="modal__overlay">
+    <div class="modal__content">
+      <div class="modal__x">X</div>
+      <div class="wrapper-relative">
+        <div class="icon-email icon-center"></div>
+        <p><span class="modal__label">semik.lukasz@gmail.com</p>
+      </div>
+      <div class="wrapper-relative">
+        <div class="icon-phone icon-center"></div>
+        <p><span class="modal__label">Phone: 605066449</p>
+      </div>
+      <div class="wrapper-relative">
+        <img src="/assets/img/github.png" style="width: 50px" class="icon-center" >
+        <p><a href="https://github.com/Lukasz-Semik" target="_blank"><span class="modal__label">Github Profile</a></p>
+      </div>
+      <div class="wrapper-relative">
+        <div class="icon-linkedin icon-center"></div>
+        <p><a href="https://linkedin.com/in/lukasz-semik-8aa466122" target="_blank"><span class="modal__label">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </div>
   <script src="temp/scripts/App.js"></script>
 </body>
 </html>

@@ -11113,6 +11113,10 @@ var _MobileMenu = __webpack_require__(8);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _Modal = __webpack_require__(9);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var drop = new _Drop2.default();
@@ -11120,6 +11124,7 @@ var monitorText = new _MonitorText2.default();
 var menu = new _Menu2.default();
 var separtor = new _SeparatorAnimation2.default();
 var mobileMenu = new _MobileMenu2.default();
+var modal = new _Modal2.default();
 
 /***/ }),
 /* 3 */
@@ -11183,7 +11188,7 @@ var Drop = function () {
   }, {
     key: 'dropsClickAnimation',
     value: function dropsClickAnimation(event) {
-      //we are taking current target, to always add crashed class to drop, not the small white circle.
+      //i am taking current target, to always add crashed class to drop, not the small white circle.
       var drop = (0, _jquery2.default)(event.currentTarget);
       drop.addClass('drop--crashed');
       setTimeout(function () {
@@ -11780,11 +11785,9 @@ var SeparatorAnimation = function () {
       var that = this;
       this.titles.each(function (i) {
         var currentTitle = that.titles[i];
-        console.log(currentTitle);
         new Waypoint({
           element: currentTitle,
           handler: function handler(direction) {
-            console.log('test');
             if (direction === 'down') {
               (0, _jquery2.default)(currentTitle).addClass('my-stack-separator--visible');
             } else {
@@ -11851,6 +11854,81 @@ var MobileMenu = function () {
 }();
 
 exports.default = MobileMenu;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Modal = function () {
+  function Modal() {
+    _classCallCheck(this, Modal);
+
+    this.clickers = (0, _jquery2.default)('.modal-clicker');
+    this.modal = (0, _jquery2.default)('.modal__overlay');
+    this.closer = (0, _jquery2.default)('.modal__x');
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.closeModalOverlay = this.closeModalOverlay.bind(this);
+    this.closeModalKeyboard = this.closeModalKeyboard.bind(this);
+    this.events();
+  }
+
+  _createClass(Modal, [{
+    key: 'events',
+    value: function events() {
+      this.clickers.on("click", this.openModal);
+      this.closer.on("click", this.closeModal);
+      this.modal.on("click", this.closeModalOverlay);
+      (0, _jquery2.default)(document).on("keyup", this.closeModalKeyboard);
+    }
+  }, {
+    key: 'closeModalKeyboard',
+    value: function closeModalKeyboard(event) {
+      if (event.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: 'closeModalOverlay',
+    value: function closeModalOverlay(event) {
+      if (event.currentTarget === event.target) {
+        this.modal.removeClass('modal__overlay--visible');
+      }
+    }
+  }, {
+    key: 'openModal',
+    value: function openModal(event) {
+      event.preventDefault();
+      this.modal.addClass('modal__overlay--visible');
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.modal.removeClass('modal__overlay--visible');
+    }
+  }]);
+
+  return Modal;
+}();
+
+exports.default = Modal;
 
 /***/ })
 /******/ ]);

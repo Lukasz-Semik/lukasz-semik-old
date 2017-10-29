@@ -54,6 +54,7 @@
   }
   &__label{
     color: $dark-green;
+    letter-spacing: 2px;
     text-shadow: 1px 1px black;
   }
 }

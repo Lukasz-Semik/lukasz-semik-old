@@ -13,3 +13,7 @@ body{
 a{
   text-decoration: none;
 }
+.not-visible-h1{
+  position: absolute;
+  visibility: hidden;
+}

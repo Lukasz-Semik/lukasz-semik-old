@@ -60,8 +60,8 @@ class Menu{
           if(this.navIcon){
             this.navIcon.addClass('nav-icon--more-visible');
           }
-          if(this.navClose){
-            this.navClose.addClass('nav-icon__closer--more-visible');
+          if(this.navCloser){
+            this.navCloser.addClass('nav-icon__closer--more-visible');
           }
         }else{
           this.navLinks.removeClass('nav__link--more-visible');
@@ -69,8 +69,8 @@ class Menu{
           if(this.navIcon){
             this.navIcon.removeClass('nav-icon--more-visible');
           }
-          if(this.navClose){
-            this.navClose.removeClass('nav-icon__closer--more-visible');
+          if(this.navCloser){
+            this.navCloser.removeClass('nav-icon__closer--more-visible');
           }
         }
       }

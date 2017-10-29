@@ -11355,8 +11355,8 @@ var Menu = function () {
             if (_this2.navIcon) {
               _this2.navIcon.addClass('nav-icon--more-visible');
             }
-            if (_this2.navClose) {
-              _this2.navClose.addClass('nav-icon__closer--more-visible');
+            if (_this2.navCloser) {
+              _this2.navCloser.addClass('nav-icon__closer--more-visible');
             }
           } else {
             _this2.navLinks.removeClass('nav__link--more-visible');
@@ -11364,8 +11364,8 @@ var Menu = function () {
             if (_this2.navIcon) {
               _this2.navIcon.removeClass('nav-icon--more-visible');
             }
-            if (_this2.navClose) {
-              _this2.navClose.removeClass('nav-icon__closer--more-visible');
+            if (_this2.navCloser) {
+              _this2.navCloser.removeClass('nav-icon__closer--more-visible');
             }
           }
         }
@@ -11833,6 +11833,7 @@ var MobileMenu = function () {
     this.hamburger = (0, _jquery2.default)('#hamburger');
     this.menu = (0, _jquery2.default)('.nav__menu-container');
     this.closingIcon = (0, _jquery2.default)('.nav-icon__closer');
+    this.navMain = (0, _jquery2.default)('.nav');
     this.events();
   }
 
@@ -11847,6 +11848,7 @@ var MobileMenu = function () {
       this.menu.toggleClass('nav__menu-container--expanded');
       this.closingIcon.toggleClass('nav-icon__closer--visible');
       this.hamburger.toggleClass('nav-icon-hidden');
+      this.navMain.toggleClass('nav--bg-helper');
     }
   }]);
 

@@ -1,0 +1,7 @@
+.footer-container{
+  width: 100%;
+  background-color: $main-blue;
+  border-bottom: 3px solid black;
+  padding: 5rem 0 4rem 0;
+  text-shadow: 1px 1px black;
+}

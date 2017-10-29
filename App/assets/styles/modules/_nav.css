@@ -3,6 +3,7 @@
   width: 100%;
   z-index: 10;
   padding: 2rem;
+  padding-bottom: 2.1rem;
   background-color: transparent;
   transition: all 0.6s ease-in;
   border-bottom: 3px transparent solid;
@@ -12,6 +13,13 @@
   }
   &--more-visible{
       background-color: rgba($main-blue, 0.9);
+      padding-bottom: 2rem;
+      @mixin atSmall{
+        padding-bottom: 1rem;
+      }
+  }
+  &--bg-helper{
+     background-color: rgba($main-blue, 0.9);
   }
   &__link{
     color: $light-green;

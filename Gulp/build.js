@@ -24,7 +24,10 @@ gulp.task('copySprite', ['deleteBuildFolder'], ()=>{
   return gulp.src('./App/temp/sprites/*.png')
   .pipe(gulp.dest('./docs/sprites'));
 })
-
+gulp.task('copyFavicon', ['copySprite'], ()=>{
+  return gulp.src('./App/*.ico')
+  .pipe(gulp.dest('./docs'));
+})
 gulp.task('optimImages', ()=>{
   return gulp.src(['./App/assets/img/*', '!./App/assets/img/icons-proto'])
   .pipe(imagemin({
@@ -48,4 +51,4 @@ gulp.task('usemin', ['styles', 'scripts'], ()=>{
   .pipe(gulp.dest('./docs'));
 })
 
-gulp.task('build',['deleteBuildFolder', 'copySprite', 'optimImages', 'useminStart']);
+gulp.task('build',['deleteBuildFolder', 'copySprite', 'copyFavicon', 'optimImages', 'useminStart']);

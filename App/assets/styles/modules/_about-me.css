@@ -1,6 +1,6 @@
 .about-me-container{
   width: 100%;
-  background: url('/assets/img/about-me2.jpg');
+  background: url('../assets/img/about-me2.jpg');
   position: relative;
   border-bottom: 3px solid black;
 }

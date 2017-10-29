@@ -8,13 +8,14 @@
 .header-title{
   font-size: 2.8rem;
   overflow: hidden;
+  padding: 1rem;
   @mixin atSmall{
     font-size: 4.3rem;
   }
   color: $light-green;
   &__text{
     padding: auto 5px;
-    margin: 60px auto;
+    margin: 6rem auto;
     letter-spacing: 2px;
     &--contact{
       position: relative;

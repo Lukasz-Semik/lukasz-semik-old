@@ -10,16 +10,20 @@
   <title>Łukasz Semik - Web Development</title>
 </head>
 <body>
-  <!-- <nav class="nav">
-    <a href="#" class="nav__link">{ŁS}</a>
+  <nav class="nav">
+    <a href="#landing" class="nav__link">{ŁS}</a>
     <ul class="nav__menu-container">
-      <li class="nav__menu-item"><a href="#" class="nav__link">IT SKILLS</a></li>
-      <li class="nav__menu-item"><a href="#" class="nav__link">EXP&amp;EDU</a></li>
-      <li class="nav__menu-item"><a href="#" class="nav__link">ABOUT ME</a></li>
+      <li class="nav__menu-item"><a href="#my-stack-id" id="my-stack-link" class="nav__link">MY STACK</a></li>
+      <li class="nav__menu-item"><a href="#about-me-id" id="about-me-link" class="nav__link">ABOUT</a></li>
+      <li class="nav__menu-item"><a href="#edu-exp-id" id="edu-exp-link" class="nav__link">EXP&amp;EDU</a></li>
       <li class="nav__menu-item"><a href="#" class="nav__link nav__link--contact">CONTACT</a></li>
     </ul>
-  </nav> -->
-  <div class="wrapper-relative">
+    <div id="hamburger" class="nav-icon">
+      <div class="nav-icon--middle"></div>
+    </div>
+    <div class="nav-icon__closer">X</div>
+  </nav>
+  <section class="wrapper-relative" id="landing" data-matching-link="#landing-link">
     <img class="hero-img" src="assets/img/hero-v3.jpg" alt="probably deep water">
     <div class="overlay"></div>
     <header class="header-container">
@@ -30,10 +34,10 @@
       </div>
     </header>
     <div class="drops-container"></div>
-  </div>
+  </section>
   <!-- MY STACK SECTION -->
-  <section class="my-stack-container">
-    <h1 class="title title--purple title--section">MY STACK</h1>
+  <section class="my-stack-container" id="my-stack-id" data-matching-link="#my-stack-link">
+    <h1 class="title title--purple title--section" >MY STACK</h1>
     <div class="my-stack-separator"></div>
     <!-- FIRST MAIN ROW -->
     <div class="row-flex row-flex--content-md-1">
@@ -121,27 +125,41 @@
     <div class="row-flex row-flex--content-md-1">
 
       <div class="col-flex-6">
-        <!-- <h3 class="title title--orange title--item">Advanced</h3> -->
         <!-- SINGLE ITEM -->
         <div class="row-flex">
           <div class="col-flex-4 col-margin-bot">
             <div class="icon-center icon-node"></div>
           </div>
-          <div class="col-flex-8"><h4 class="title title--skill-name">NodeJS </h4></div>
+          <div class="col-flex-8">
+            <h4 class="title title--skill-name wrapper-relative">
+            NodeJS
+            <span class="my-stack-hints">Beginner</span>
+            </h4>
+          </div>
         </div>
         <!-- SINGLE ITEM -->
         <div class="row-flex">
           <div class="col-flex-4 col-margin-bot">
             <div class="icon-center icon-mongo"></div>
           </div>
-          <div class="col-flex-8"><h4 class="title title--skill-name">MongoDB </h4></div>
+          <div class="col-flex-8">
+            <h4 class="title title--skill-name wrapper-relative">
+              MongoDB
+              <span class="my-stack-hints">Beginner</span>
+            </h4>
+          </div>
         </div>
         <!-- SINGLE ITEM -->
         <div class="row-flex">
           <div class="col-flex-4 col-margin-bot">
             <div class="icon-center icon-jest"></div>
           </div>
-          <div class="col-flex-8"><h4 class="title title--skill-name">Jest </h4></div>
+          <div class="col-flex-8">
+            <h4 class="title title--skill-name wrapper-relative">
+              Jest
+              <span class="my-stack-hints">Beginner</span>
+            </h4>
+          </div>
         </div>
         <!-- SINGLE ITEM -->
         <div class="row-flex">
@@ -153,7 +171,6 @@
       </div>
 
       <div class="col-flex-6">
-        <!-- <h3 class="title title--orange title--item">Intermediate</h3> -->
         <!-- SINGLE ITEM -->
         <div class="row-flex">
           <div class="col-flex-4 col-margin-bot">
@@ -185,7 +202,7 @@
       </div>
     </div><!-- END OF SECOND MAIN ROW - MY STACK -->
   </section>
-  <section class="about-me-container">
+  <section class="about-me-container" id="about-me-id" data-matching-link="#about-me-link">
     <h1 class="title title--purple title--section">ABOUT ME</h1>
     <div class="my-stack-separator"></div>
     <div class="wrapper--80 wrapper--top-bot-margin">
@@ -202,17 +219,17 @@
           <img src="/assets/img/gear.png" class="about-me__gear-animation">
         </div>
         <div class="col-flex-4 col-flex-content-center wrapper-relative wrapper--const-height-on-small">
-          <h5 class="about-me__slogans about-me__slogans--moving-first-one">PASSION</span>
-          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--1">CLEAN CODE</h5>
+          <h5 class="about-me__slogans about-me__slogans--moving-first-one">CLEAN CODE</span>
+          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--1">RWD</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--2">HARD WORK</h5>
-          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--3">PERFECTION</h5>
-          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--4">PRECISION</h5>
+          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--3">OWN STYLE</h5>
+          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--4">BEM</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--5">ORGANIZATION</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--6">OPEN MIND</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--7">KNOWLEDGE</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--8">PERFORMANCE</h5>
           <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--9">TEAMWORK</h5>
-          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--10">PASSION</h5>
+          <h5 class="about-me__slogans about-me__slogans--moving about-me__slogans--moving--10">CLEAN CODE</h5>
         </div>
         <div class="col-flex-4 col-flex-content-center">
           <div class="wrapper-relative">
@@ -227,7 +244,7 @@
         <h2 class="title title--darken-orange title--github-link">Checkout my codes and projects on GitHub repo!</h2>
         <h3 class="col-flex-content-center">
           <img src="/assets/img/github.png" style="width: 50px"><!-- Gimp can't handle to keep nice quality after resizing :( Point to improve later! -->
-          <a href="#" class="title title--green title--item title--link-rework about-me--give-animation title--pull-right-at-sm">
+          <a href="https://github.com/Lukasz-Semik" target="_blank" class="title title--green title--item title--link-rework about-me--give-animation title--pull-right-at-sm">
             Łukasz Semik
           </a>
         </h3>
@@ -236,7 +253,7 @@
   </section>
 
   <!-- EDU AND EXPERIENCE - class names to refactor! -->
-  <section class="my-stack-container">
+  <section class="my-stack-container" id="edu-exp-id" data-matching-link="#edu-exp-link">
     <h1 class="title title--purple title--section">EDUCATION &amp; EXPERIENCE</h1>
     <div class="my-stack-separator"></div>
 

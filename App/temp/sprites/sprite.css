@@ -18,127 +18,139 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-bootstrap {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -80px;
   width: 51px;
   height: 50px;
 }
 .icon-cpp {
   background-image: url(sprite.png);
-  background-position: -201px -100px;
+  background-position: -241px -147px;
   width: 43px;
   height: 50px;
 }
 .icon-css3 {
   background-image: url(sprite.png);
-  background-position: 0px -50px;
+  background-position: 0px -130px;
   width: 50px;
   height: 50px;
 }
+.icon-edu {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 98px;
+  height: 80px;
+}
 .icon-email {
   background-image: url(sprite.png);
-  background-position: -100px -150px;
+  background-position: -241px -197px;
   width: 50px;
   height: 33px;
 }
+.icon-exp {
+  background-image: url(sprite.png);
+  background-position: -98px 0px;
+  width: 93px;
+  height: 80px;
+}
 .icon-git {
   background-image: url(sprite.png);
-  background-position: -101px 0px;
+  background-position: -50px -130px;
   width: 50px;
   height: 50px;
 }
 .icon-gulp {
   background-image: url(sprite.png);
-  background-position: -247px 0px;
+  background-position: -151px -80px;
   width: 25px;
   height: 50px;
 }
 .icon-html5 {
   background-image: url(sprite.png);
-  background-position: 0px -100px;
+  background-position: -191px 0px;
   width: 50px;
   height: 50px;
 }
 .icon-jest {
   background-image: url(sprite.png);
-  background-position: -50px -100px;
+  background-position: -191px -50px;
   width: 50px;
   height: 50px;
 }
 .icon-jquery {
   background-image: url(sprite.png);
-  background-position: -100px -100px;
+  background-position: -191px -100px;
   width: 50px;
   height: 50px;
 }
 .icon-js {
   background-image: url(sprite.png);
-  background-position: -151px 0px;
+  background-position: -150px -180px;
   width: 50px;
   height: 50px;
 }
 .icon-linkedin {
   background-image: url(sprite.png);
-  background-position: 0px -150px;
+  background-position: -50px -180px;
   width: 50px;
   height: 50px;
 }
 .icon-lredux {
   background-image: url(sprite.png);
-  background-position: -50px -150px;
+  background-position: -241px 0px;
   width: 50px;
   height: 47px;
 }
 .icon-mongo {
   background-image: url(sprite.png);
-  background-position: -201px 0px;
+  background-position: -241px -47px;
   width: 46px;
   height: 50px;
 }
 .icon-node {
   background-image: url(sprite.png);
-  background-position: -201px -50px;
+  background-position: -241px -97px;
   width: 44px;
   height: 50px;
 }
 .icon-npm {
   background-image: url(sprite.png);
-  background-position: 0px -200px;
+  background-position: -43px -230px;
   width: 60px;
   height: 23px;
 }
 .icon-phone {
   background-image: url(sprite.png);
-  background-position: -151px -100px;
+  background-position: -100px -180px;
   width: 50px;
   height: 50px;
 }
 .icon-postcss {
   background-image: url(sprite.png);
-  background-position: -151px -50px;
+  background-position: 0px -180px;
   width: 50px;
   height: 50px;
 }
 .icon-react {
   background-image: url(sprite.png);
-  background-position: -101px -50px;
+  background-position: -100px -130px;
   width: 50px;
   height: 50px;
 }
 .icon-sass {
   background-image: url(sprite.png);
-  background-position: -50px -50px;
+  background-position: -101px -80px;
   width: 50px;
   height: 50px;
 }
 .icon-webpack {
   background-image: url(sprite.png);
-  background-position: -201px -150px;
+  background-position: 0px -230px;
   width: 43px;
   height: 50px;
 }
 .icon-yarn {
   background-image: url(sprite.png);
-  background-position: -51px 0px;
+  background-position: -51px -80px;
   width: 50px;
   height: 50px;
 }

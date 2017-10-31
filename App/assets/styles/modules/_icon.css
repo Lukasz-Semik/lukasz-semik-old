@@ -5,3 +5,10 @@
 .icon-move-down{
   margin-top: 15px;
 }
+.icon-button{
+  display: inline-block;
+  margin: 0 2rem;
+  &:hover{
+    cursor: pointer;
+  }
+}

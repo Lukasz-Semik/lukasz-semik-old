@@ -491,6 +491,24 @@ a{
   }
   }
 
+.wrapper--700px{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+@media (min-width: 820px){
+
+.wrapper--700px{
+      width: 800px
+  }
+  }
+
+.wrapper--absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 .wrapper--const-height-on-small{
     min-height: 100px;
   }
@@ -1320,6 +1338,15 @@ a{
   margin-top: 15px;
 }
 
+.icon-button{
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.icon-button:hover{
+    cursor: pointer;
+  }
+
 .about-me-container{
   width: 100%;
   background: url('../assets/img/about-me2.jpg');
@@ -1687,4 +1714,29 @@ strong{
   padding: 5rem 0 4rem 0;
   text-shadow: 1px 1px black;
   letter-spacing: 1px;
+}
+
+.eduexp-container{
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.eduexp-container--hidden{
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+
+.edu-exp-buttons-container{
+width: 300px;
+margin: 0 auto;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }

@@ -951,6 +951,7 @@ a{
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
     text-align: center;
+    max-width: 160px;
   }
 
 @media (min-width: 520px) {
@@ -961,6 +962,7 @@ a{
   }
 
 .nav__menu-container--expanded{
+
       padding: 2rem 0;
       opacity: 1;
       text-align: center;
@@ -975,6 +977,7 @@ a{
 
 .nav__menu-container{
       position: static;
+      max-width: 100%;
       text-align: right;
       float: right;
       margin: 0;

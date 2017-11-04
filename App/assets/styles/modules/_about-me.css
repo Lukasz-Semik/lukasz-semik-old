@@ -1,19 +1,25 @@
 .about-me-container{
   width: 100%;
-  background: url('../assets/img/about-me2.jpg');
+  /*background: url('/assets/img/tealback.jpg');*/
+  background: url('../assets/img/tealback.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   border-bottom: 3px solid black;
 }
 .about-me{
+  font-family: 'Lato', sans-serif;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 3rem;
   margin: 0;
   padding: 0;
   border-radius: 50%;
   @mixin atSmall{
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 4.3rem;
     padding: 0 3rem 0 3rem;
   }
   &__gear-animation{
@@ -33,7 +39,7 @@
     transform: translate(-50%,-50%);
     font-size: 2rem;
     margin: 0;
-    color: $v-light-orange;
+    color: black;
     @mixin atLarge{
       font-size: 3rem;
     }
@@ -76,8 +82,8 @@
   }
 }
 strong{
-  color: $light-orange;
-  text-shadow: 1px 1px black;
+  color: $v-light-orange;
+  text-shadow: 1.2px 1.2px black;
 }
 
 @keyframes moving-first-item {

@@ -1,11 +1,16 @@
 .title{
   margin: 0;
   text-align: center;
+  font-family: 'Lato', sans-serif;
   &--pull-right-at-sm{
     text-align: right;
     @mixin atSmall{
       text-align: center;
     }
+  }
+  &--font-sey{
+    font-family: 'Seymour One', sans-serif;
+    text-shadow: 1.2px 1.2px black;
   }
   &--exp{
     font-size: 1.6rem;
@@ -15,7 +20,7 @@
     padding: 0 2rem;
     @mixin atMedium{
       padding: 0 5rem;
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
   &--descr{
@@ -32,6 +37,9 @@
   }
   &--bot-margin{
     margin-bottom: 2.5rem;
+  }
+  &--black{
+    color: black;
   }
   &--purple{
     color: $dark-purple;
@@ -54,7 +62,14 @@
       width: 100%;
     }
   }
+  &--shadow{
+    text-shadow: 1.2px 1.2px black;
+  }
+  &--letter-space{
+    letter-spacing: 2px;
+  }
   &--section{
+    font-family: 'Seymour One', sans-serif;
     font-size: 2.3rem;
     padding: 3rem 0;
     @mixin atSmall{
@@ -80,15 +95,14 @@
   &--item{
     font-size: 2.2rem;
     padding: 3rem;
-    text-shadow: 1.5px 1.5px black;
     @mixin atSmall{
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   &--github-link{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 3rem 1rem 1rem 1rem;
-    text-shadow: 1.5px 1.5px black;
+    text-shadow: 1.2px 1.2px black;
     @mixin atSmall{
       font-size: 3rem;
       padding: 3rem;
@@ -98,7 +112,7 @@
     line-height: 5rem;
     font-size: 1.3rem;
     @mixin atSmall{
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
   }
   &--link-rework{

@@ -12,14 +12,14 @@
     padding: 1rem;
   }
   &--more-visible{
-      background-color: rgba($main-blue, 0.9);
+      background-color: rgba(0,0,0, 0.6);
       padding-bottom: 2rem;
       @mixin atSmall{
         padding-bottom: 1rem;
       }
   }
   &--bg-helper{
-     background-color: rgba($main-blue, 0.9);
+     background-color: rgba(0,0,0, 0.6);
   }
   &__link{
     color: $light-green;
@@ -66,7 +66,7 @@
       transform: translateX(-50%) scale(1);
       z-index: 15;
       color: $dark-green;
-      background-color: rgba($main-blue, 0.9);
+      background-color: rgba(0,0,0, 0.6);
     }
     @mixin atMedium{
       position: static;

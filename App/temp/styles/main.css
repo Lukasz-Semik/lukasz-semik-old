@@ -888,7 +888,7 @@ a{
   }
 
 .nav--more-visible{
-      background-color: rgba(66,173,244, 0.9);
+      background-color: rgba(0,0,0, 0.6);
       padding-bottom: 2rem;
   }
 
@@ -900,7 +900,7 @@ a{
   }
 
 .nav--bg-helper{
-     background-color: rgba(66,173,244, 0.9);
+     background-color: rgba(0,0,0, 0.6);
   }
 
 .nav__link{
@@ -970,7 +970,7 @@ a{
               transform: translateX(-50%) scale(1);
       z-index: 15;
       color: #4fff28;
-      background-color: rgba(66,173,244, 0.9);
+      background-color: rgba(0,0,0, 0.6);
     }
 
 @media (min-width: 820px){
@@ -1139,7 +1139,7 @@ a{
 }
 
 .my-stack-separator{
-  background-color: #400075;
+  background-color: black;
   width: 0;
   margin: 0 auto;
   height: 3px;
@@ -1165,6 +1165,7 @@ a{
 .title{
   margin: 0;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .title--pull-right-at-sm{
@@ -1176,6 +1177,11 @@ a{
 .title--pull-right-at-sm{
       text-align: center
   }
+  }
+
+.title--font-sey{
+    font-family: 'Seymour One', sans-serif;
+    text-shadow: 1.2px 1.2px black;
   }
 
 .title--exp{
@@ -1190,7 +1196,7 @@ a{
 
 .title--exp{
       padding: 0 5rem;
-      font-size: 2rem
+      font-size: 3rem
   }
   }
 
@@ -1213,6 +1219,10 @@ a{
 
 .title--bot-margin{
     margin-bottom: 2.5rem;
+  }
+
+.title--black{
+    color: black;
   }
 
 .title--purple{
@@ -1246,7 +1256,16 @@ a{
   }
   }
 
+.title--shadow{
+    text-shadow: 1.2px 1.2px black;
+  }
+
+.title--letter-space{
+    letter-spacing: 2px;
+  }
+
 .title--section{
+    font-family: 'Seymour One', sans-serif;
     font-size: 2.3rem;
     padding: 3rem 0;
   }
@@ -1291,20 +1310,19 @@ a{
 .title--item{
     font-size: 2.2rem;
     padding: 3rem;
-    text-shadow: 1.5px 1.5px black;
   }
 
 @media (min-width: 520px) {
 
 .title--item{
-      font-size: 3rem
+      font-size: 4rem
   }
   }
 
 .title--github-link{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 3rem 1rem 1rem 1rem;
-    text-shadow: 1.5px 1.5px black;
+    text-shadow: 1.2px 1.2px black;
   }
 
 @media (min-width: 520px) {
@@ -1323,7 +1341,7 @@ a{
 @media (min-width: 520px) {
 
 .title--skill-name{
-      font-size: 2rem
+      font-size: 2.3rem
   }
   }
 
@@ -1352,14 +1370,19 @@ a{
 
 .about-me-container{
   width: 100%;
-  background: url('../assets/img/about-me2.jpg');
+  /*background: url('/assets/img/tealback.jpg');*/
+  background: url('../assets/img/tealback.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   border-bottom: 3px solid black;
 }
 
 .about-me{
+  font-family: 'Lato', sans-serif;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 3rem;
   margin: 0;
   padding: 0;
@@ -1369,8 +1392,9 @@ a{
 @media (min-width: 520px) {
 
 .about-me{
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 4.3rem;
     padding: 0 3rem 0 3rem
 }
   }
@@ -1396,7 +1420,7 @@ a{
             transform: translate(-50%,-50%);
     font-size: 2rem;
     margin: 0;
-    color: #f8cc7f;
+    color: black;
   }
 
 @media (min-width: 1000px){
@@ -1467,8 +1491,8 @@ a{
       }
 
 strong{
-  color: #f6aa5f;
-  text-shadow: 1px 1px black;
+  color: #f8cc7f;
+  text-shadow: 1.2px 1.2px black;
 }
 
 @-webkit-keyframes moving-first-item {
@@ -1662,7 +1686,7 @@ strong{
     width: 95%;
     height: 500px;
     position: relative;
-    background-color: rgba(121,247,187, 0.7);
+    background-color: rgba(66,173,244, 0.8);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1705,9 +1729,11 @@ strong{
     }
 
 .modal__label{
+    font-family: 'Lato', sans-serif;
     color: #4fff28;
     letter-spacing: 2px;
     text-shadow: 1px 1px black;
+    font-size: 2rem;
   }
 
 .footer-container{

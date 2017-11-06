@@ -962,7 +962,6 @@ a{
   }
 
 .nav__menu-container--expanded{
-
       padding: 2rem 0;
       opacity: 1;
       text-align: center;
@@ -1121,7 +1120,6 @@ a{
       -webkit-transform: scale(0);
               transform: scale(0);
       opacity: 0;
-
     }
 
 .nav-icon-hidden::after{
@@ -1221,14 +1219,6 @@ a{
     margin-bottom: 2.5rem;
   }
 
-.title--black{
-    color: black;
-  }
-
-.title--purple{
-    color: #400075;
-  }
-
 .title--orange{
     color: #f8cc7f;
   }
@@ -1291,7 +1281,8 @@ a{
 @media (min-width: 520px) {
 
 .title--footer{
-      font-size: 3rem
+      font-size: 3rem;
+      text-shadow: 2px 1.6px black
   }
   }
 
@@ -1304,6 +1295,7 @@ a{
 
 .title--footer-sm{
       font-size: 2.3rem;
+      text-shadow: 2px 1.6px black
   }
   }
 
@@ -1348,6 +1340,7 @@ a{
 .title--link-rework{
     display: block;
     text-decoration: none;
+    color: black;
   }
 
 .icon-center{
@@ -1420,7 +1413,6 @@ a{
             transform: translate(-50%,-50%);
     font-size: 2rem;
     margin: 0;
-    color: black;
   }
 
 @media (min-width: 1000px){
@@ -1675,7 +1667,6 @@ strong{
   }
 
 .modal__overlay--visible{
-      /*z-index: 20;*/
       visibility: visible;
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -1686,7 +1677,7 @@ strong{
     width: 95%;
     height: 500px;
     position: relative;
-    background-color: rgba(66,173,244, 0.8);
+    background-color: rgba(3,90,222, 0.8);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1738,10 +1729,9 @@ strong{
 
 .footer-container{
   width: 100%;
-  background-color: #42ADF4;
+  background-color: #035ade;
   border-bottom: 3px solid black;
   padding: 5rem 0 4rem 0;
-  text-shadow: 1px 1px black;
   letter-spacing: 1px;
 }
 

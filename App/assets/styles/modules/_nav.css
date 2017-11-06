@@ -59,7 +59,6 @@
       padding: 1rem 0;
     }
     &--expanded{
-
       padding: 2rem 0;
       opacity: 1;
       text-align: center;
@@ -175,13 +174,10 @@
       transform: scale(0);
       opacity: 0;
     }
-
     .nav-icon--middle {
       transform: scale(0);
       opacity: 0;
-
     }
-
     &::after{
       transform: scale(0);
       opacity: 0;
